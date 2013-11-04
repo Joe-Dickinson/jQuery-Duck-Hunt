@@ -11,17 +11,17 @@ body {
   background: url(../img/background.jpg);
   width: 1366px;
   height: 768px;
-  overflow: hidden;
+/*  overflow: hidden;*/
   cursor: none;
 }
 
 #crosshair {
-  display: none;
   position: relative;
   z-index: 2;
   background: url(../img/crosshair.png);
   width: 60px;
   height: 60px;
+  background-position: right: 10px;
 }
 
 .sprite {
@@ -79,3 +79,7 @@ body {
   font-size: 0.4em;
 }
 
+.fall {
+ /* background-color: red;
+  bottom: 50px;*/
+}
