@@ -55,4 +55,5 @@ Game.prototype.gameOver = function() {
 Game.prototype.addScore = function(points) {
   this.score += points;
   console.log("Score: " + this.score);
+  $('#score').text(this.score);
 }

@@ -83,3 +83,12 @@ body {
  /* background-color: red;
   bottom: 50px;*/
 }
+
+#score {
+  font-family: impact;
+  color: white;
+  position: absolute;
+  top: 716px;
+  left: 994px;
+  font-size: 30px;
+}
