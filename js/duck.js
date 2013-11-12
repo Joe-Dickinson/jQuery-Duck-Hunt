@@ -8,7 +8,11 @@ function Duck(game) {
   // Add a callback for when the Duck is clicked (shot!)
   var _this = this;
   $(this.el).click(function() {
-    _this.die();
+    if (_this.game.bullet_count > 0) {
+      _this.die();
+      // _this.game.bullet_count -= 1; // <<??
+      // console.log(_this.game.bullet_count)
+    }
   });
 
   // Display the Duck in the #game
@@ -51,7 +55,7 @@ Duck.prototype.draw = function() {
   $(this.el).animate({
     left: "+=1600px",
     top: "+=200px"
-  }, 10000, "linear", function() {
+  }, this.game.speed, "linear", function() {
     console.log("phew");
     _this.complete();
     _this.remove();

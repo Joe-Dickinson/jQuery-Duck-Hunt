@@ -92,3 +92,67 @@ body {
   left: 994px;
   font-size: 30px;
 }
+
+#game-start {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: 10;
+  background-color: rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+}
+
+#choose-difficulty {
+  text-transform: uppercase;
+  font-family: courier, "Courier New", monospace;
+  background: #000;
+  color: #FFF;
+  width: 600px;
+  font-size: 4em;
+  padding: 1.4em;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1em;
+}
+
+.shell {
+  position: absolute;
+  top: 688px;
+  width: 30px;
+  height: 30px;
+  }
+
+.shell_3 {
+  left: 112px;
+}
+
+.shell_2 {
+  left: 150px;
+}
+
+.shell_1 {
+  left: 190px;
+}
+
+.display_none {
+  display: none;
+}
+
+#white_flash {
+  display: none;
+  position: absolute;
+  z-index: 11;
+  background-color: white;
+  height: 2000px;
+  width: 2000px;
+}
+ 
+#click {
+  position: absolute;
+  z-index: 11;
+  color: white;
+  font-size: 100px;
+  top: 500px;
+  left: 500px;
+}

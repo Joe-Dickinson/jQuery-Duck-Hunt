@@ -16,6 +16,10 @@ $(document).ready(function() {
   });
   // Kick-off a New Game
   // TODO: Pass in a string to represent the difficulty level
-  
-  new Game();
+    function choose() {
+      var difficulty = $(this).text();
+      $('#game-start').toggle();
+      new Game(difficulty);
+    };
+    $('.difficulty').click(choose);
 });
