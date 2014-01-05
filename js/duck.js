@@ -10,8 +10,6 @@ function Duck(game) {
   $(this.el).click(function() {
     if (_this.game.bullet_count > 0) {
       _this.die();
-      // _this.game.bullet_count -= 1; // <<??
-      // console.log(_this.game.bullet_count)
     }
   });
 

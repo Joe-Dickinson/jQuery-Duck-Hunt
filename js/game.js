@@ -32,8 +32,6 @@ Game.prototype.nextRound = function() {
 
   var duck = new Duck(this);
   var duck = new Duck(this);
-  // this.bullet_count = 0;
-  // this.bullet_count = 3;
   var _this = this;
   _this.bullet_count = 0;
   _this.bullet_count = 3;
@@ -42,13 +40,11 @@ Game.prototype.nextRound = function() {
   $('.shell').show();
   $('#game').unbind("click");
   $('#game').click(function () {
-    // var _this = this;
     if (_this.bullet_count > 0) {
       $('#white_flash').show(0).delay(10).hide(2);
     } else { 
       $('#click').show(0).delay(30).hide(5);
     }
-    // $('#white_flash').hide();
     _this.bullet_count -= 1;
     console.log(_this.bullet_count);
     if (_this.bullet_count < 1 ) {
